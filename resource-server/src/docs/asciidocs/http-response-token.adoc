@@ -1,0 +1,13 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+
+[ {
+  "access_token": "08f15e75-9905-460e-b844-48e962e93efe",
+  "token_type": "bearer",
+  "refresh_token": "8e2b0bfb-838e-4b5a-b92a-a7213415e699",
+  "expires_in": 299,
+  "scope": "read"
+} ]
+----

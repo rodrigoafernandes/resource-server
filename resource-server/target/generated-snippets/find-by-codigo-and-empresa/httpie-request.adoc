@@ -1,0 +1,7 @@
+[source,bash]
+----
+$ http --form POST 'http://apicontmatic.com.br:8080/servico/findByCodigoAndEmpresa' \
+    'Authorization:Bearer <YOUR-TOKEN-HERE>' \
+    'codigoServico=123' \
+    'idEmpresa=1'
+----

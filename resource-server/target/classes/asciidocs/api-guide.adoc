@@ -1,0 +1,116 @@
+= Api Contmatic
+Contmatic Developer Team
+:toc: left
+:toc-title: Conteúdo
+:toclevels: 4
+
+== Introdução
+
+A Api Contmatic tem como objetivo...
+
+== Overview
+=== Códigos de Status HTTP
+
+Nossa Api buscar ser o mais aderente possível para as convenções HTTP e REST quanto ao uso dos Códigos de Status HTTP.
+
+|===
+| Código do Status | Utilização
+
+| `200 OK`
+| Resposta padrão para solicitações HTTP bem-sucedidas. A resposta real dependerá do método de solicitação utilizado. Em uma solicitação GET, a resposta conterá uma entidade correspondente ao recurso solicitado. Em um pedido POST, a resposta conterá uma entidade descrevendo ou contendo o resultado da ação.
+
+| `201 Created`
+| O request foi cumprido e resultou na criação de um novo recurso.
+
+| `204 No Content`
+| O servidor processou com êxito a solicitação, mas não está retornando nenhum conteúdo.
+
+| `400 Bad Request`
+| O servidor não pode ou não processará o request devido a algo que é percebido como um erro de cliente (por exemplo, sintaxe de request malformada, enquadramento de mensagem request inválida ou roteamento de request inválido).
+
+| `404 Not Found`
+| O recurso solicitado não pôde ser encontrado, mas pode estar disponível novamente no futuro. Pedidos subseqüentes pelo cliente são permitidos.
+|===
+  
+== Resources
+=== Token
+Para acessar os recursos da API é necessário um token de autenticação. 
+
+Exemplo de Request para solicitação do Token
+include::curl-request-token.adoc[]
+
+Exemplo de Response
+include::http-response-token.adoc[]
+
+Descrição dos Campos do Response
+include::response-fields-token.adoc[]
+
+=== Serviços
+==== Busca de Serviço por Id
+Exemplo de request:
+include::{snippets}/find-by-id/curl-request.adoc[]
+ 
+Descrição do parâmetro do PATH
+include::{snippets}/find-by-id/path-parameters.adoc[]
+ 
+Exemplo de response: 
+include::{snippets}/find-by-id/http-response.adoc[]
+
+Descrição dos Campos do Response
+include::{snippets}/find-by-id/response-fields.adoc[]
+
+==== Busca de Serviço pelo código e pela empresa
+Exemplo de Request:
+include::{snippets}/find-by-codigo-and-empresa/curl-request.adoc[]
+
+Descrição dos parâmetros de request
+include::{snippets}/find-by-codigo-and-empresa/request-parameters.adoc[]
+
+Exemplo de Response:
+include::{snippets}/find-by-codigo-and-empresa/http-response.adoc[]
+
+Descrição dos Campos do Response
+include::{snippets}/find-by-codigo-and-empresa/response-fields.adoc[]
+
+==== Busca do Grid de Servicos
+Exemplo de Request
+include::{snippets}/find-grid/curl-request.adoc[]
+
+Descrição dos parâmetros de request
+include::{snippets}/find-grid/request-fields.adoc[]
+
+Exemplo de Response
+include::{snippets}/find-grid/http-response.adoc[]
+
+Descrição dos Campos do Response
+include::{snippets}/find-grid/response-fields.adoc[]
+
+==== Inclusão de Servico
+Exemplo de Request
+include::{snippets}/save/curl-request.adoc[]
+
+Descrição dos parâmetros de request
+include::{snippets}/save/request-fields.adoc[]
+
+Exemplo de Response
+include::{snippets}/save/http-response.adoc[]
+
+Descrição dos Campos do Response
+include::{snippets}/save/response-fields.adoc[]
+
+==== Exclusão de Serviço
+Exemplo de Request
+include::{snippets}/delete/curl-request.adoc[]
+
+Descrição do parâmetro do PATH
+include::{snippets}/delete/path-parameters.adoc[]
+
+Exemplo de Response
+include::{snippets}/delete/http-response.adoc[]
+
+== Documentação de referência
+http://docs.spring.io/spring-restdocs/docs/current/reference/html5/#getting-started
+
+http://asciidoctor.org/docs/user-manual/
+
+http://asciidoctor.org/docs/asciidoc-writers-guide/

@@ -1,0 +1,8 @@
+./servico/{id}
+|===
+|Parameter|Description
+
+|`id`
+|Id do serviço a ser pesquisado
+
+|===

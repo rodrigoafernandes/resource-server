@@ -1,0 +1,412 @@
+|===
+|Path|Type|Description
+
+|`[].id`
+|`Number`
+|Identificador do serviço
+
+|`[].codigo`
+|`String`
+|Código de controle
+
+|`[].situacao`
+|`String`
+|Situação do serviço
+
+|`[].prestado`
+|`Boolean`
+|Prestado
+
+|`[].tomado`
+|`Boolean`
+|Tomado
+
+|`[].descricao`
+|`String`
+|Descrição do serviço
+
+|`[].cnae`
+|`Number`
+|CNAE do serviço
+
+|`[].naturezaOperacao`
+|`String`
+|Natureza Operação
+
+|`[].codigoServicoMunicipio`
+|`String`
+|Código do serviço no Município
+
+|`[].descricaoServicoMunicipio`
+|`String`
+|Descrição do serviço no Município
+
+|`[].valorUnitario`
+|`Number`
+|Valor do serviço
+
+|`[].lcServico`
+|`String`
+|Lc Serviços
+
+|`[].leiNbs`
+|`String`
+|Lei NBS
+
+|`[].aliquotaFederal`
+|`Number`
+|Valor da Aliquota Federal do serviço
+
+|`[].aliquotaImportada`
+|`Number`
+|Valor da aliquota importada do serviço
+
+|`[].aliquotaMunicipal`
+|`Number`
+|Valor da aliquota municipal do serviço
+
+|`[].tributacao`
+|`Object`
+|Detalhes da tributação
+
+|`[].tributacao.id`
+|`Number`
+|Id da tributação
+
+|`[].tributacao.iss`
+|`Number`
+|Iss da tributação
+
+|`[].tributacao.reducaoBaseCalculoIss`
+|`Number`
+|Iss da tributação
+
+|`[].tributacao.servico`
+|`Object`
+|Referencia ao Parent
+
+|`[].retencao`
+|`Object`
+|Detalhes da retenção
+
+|`[].retencao.id`
+|`Number`
+|Id da retenção
+
+|`[].retencao.cofins`
+|`Number`
+|Cofins da retenção
+
+|`[].retencao.csll`
+|`Number`
+|Csll da retenção
+
+|`[].retencao.inss`
+|`Number`
+|Inss da retenção
+
+|`[].retencao.irrf`
+|`Number`
+|Irrf da retenção
+
+|`[].retencao.pis`
+|`Number`
+|Pis da retenção
+
+|`[].retencao.valorMinimoRecolhimentoInss`
+|`Number`
+|Valor Minimo Recolhimento Inss da retenção
+
+|`[].retencao.valorMinimoRecolhimentoPcc`
+|`Number`
+|Valor Minimo Recolhimento Pcc da retenção
+
+|`[].retencao.valorMinimoRecolhimentoIrrf`
+|`Number`
+|Valor Minimo Recolhimento Irrf da retenção
+
+|`[].retencao.servico`
+|`Object`
+|Referencia ao Parent
+
+|`[].integracaoPis`
+|`Object`
+|Detalhes da Integração PIS
+
+|`[].integracaoPis.id`
+|`Number`
+|Id da Integração PIS
+
+|`[].integracaoPis.situacaoTributariaPisEntrada`
+|`String`
+|Situacão Tributaria Pis Entrada
+
+|`[].integracaoPis.aliquotaPisTomado`
+|`Number`
+|Aliquota Pis Tomado da Integração PIS
+
+|`[].integracaoPis.tipoDeCredito`
+|`String`
+|Tipo de Crédito
+
+|`[].integracaoPis.baseCalculoCredito`
+|`String`
+|Base Calculo Credito da Integração PIS
+
+|`[].integracaoPis.situacaoTributariaPisSaida`
+|`String`
+|Situação tributária PIS saída
+
+|`[].integracaoPis.aliquotaPisPrestado`
+|`Number`
+|Aliquota Pis Prestado da Integração PIS
+
+|`[].integracaoPis.contribuicaoSocialApurada`
+|`String`
+|Contribuição Social Apurada da Integração PIS
+
+|`[].integracaoPis.naturezaReceita`
+|`Object`
+|Natureza Receita da Integração PIS
+
+|`[].integracaoPis.naturezaReceita.id`
+|`Number`
+|Id da Natureza Receita
+
+|`[].integracaoPis.naturezaReceita.codigo`
+|`String`
+|Código da Natureza Receita
+
+|`[].integracaoPis.naturezaReceita.cst`
+|`String`
+|Cst da Natureza Receita
+
+|`[].integracaoPis.naturezaReceita.descricao`
+|`String`
+|Descrição da Natureza Receita
+
+|`[].integracaoPis.naturezaReceita.codigoTabela`
+|`String`
+|Código tabela da Natureza Receita
+
+|`[].integracaoPis.naturezaReceita.prefixDialog`
+|`String`
+|PrefixDialog da Natureza Receita
+
+|`[].integracaoPis.naturezaReceita.prefixSelect`
+|`String`
+|PrefixSelect da Natureza Receita
+
+|`[].integracaoPis.servico`
+|`Object`
+|Referencia ao Parent
+
+|`[].integracaoCofins`
+|`Object`
+|Detalhes da integração COFINS
+
+|`[].integracaoCofins.id`
+|`Number`
+|Id da integração COFINS
+
+|`[].integracaoCofins.situacaoTributariaCofinsEntrada`
+|`String`
+|Situação Tributária Cofins
+
+|`[].integracaoCofins.aliquotaCofinsTomado`
+|`Number`
+|Valor aliquota Cofins Tomado
+
+|`[].integracaoCofins.tipoDeCredito`
+|`String`
+|Tipo de crédito
+
+|`[].integracaoCofins.baseCalculoCredito`
+|`String`
+|Base Calculo Crédito
+
+|`[].integracaoCofins.situacaoTributariaCofinsSaida`
+|`String`
+|Situação Tributária Cofins Saída
+
+|`[].integracaoCofins.aliquotaCofinsPrestado`
+|`Number`
+|Aliquota Cofins Prestado
+
+|`[].integracaoCofins.aliquotaCofinsPrestado`
+|`Number`
+|Valor aliquota Cofins Prestado
+
+|`[].integracaoCofins.contribuicaoSocialApurada`
+|`String`
+|Contribuição Social Apurada
+
+|`[].integracaoCofins.naturezaReceita`
+|`Object`
+|Natureza Receita
+
+|`[].integracaoCofins.naturezaReceita.id`
+|`Number`
+|Id da Natureza Receita
+
+|`[].integracaoCofins.naturezaReceita.cst`
+|`String`
+|CST
+
+|`[].integracaoCofins.naturezaReceita.codigoTabela`
+|`String`
+|Código tabela
+
+|`[].integracaoCofins.naturezaReceita.prefixDialog`
+|`String`
+|Prefix Dialog
+
+|`[].integracaoCofins.naturezaReceita.prefixSelect`
+|`String`
+|Prefix Select
+
+|`[].integracaoCofins.naturezaReceita.codigo`
+|`String`
+|Código
+
+|`[].integracaoCofins.naturezaReceita.descricao`
+|`String`
+|Descrição
+
+|`[].integracaoCofins.servico`
+|`Object`
+|Referencia ao Parent
+
+|`[].integracaoEscrituracao`
+|`Object`
+|Detalhes da integração Escrituração
+
+|`[].integracaoEscrituracao.id`
+|`Number`
+|ID da integração Escrituração
+
+|`[].integracaoEscrituracao.id`
+|`Number`
+|ID da integração Escrituração
+
+|`[].integracaoEscrituracao.lucroPresumido`
+|`String`
+|Lucro Presumido
+
+|`[].integracaoEscrituracao.darf`
+|`String`
+|DARF
+
+|`[].integracaoEscrituracao.anexo`
+|`String`
+|Anexo
+
+|`[].integracaoEscrituracao.servico`
+|`Object`
+|Referencia ao Parent
+
+|`[].integracaoEscrituracao.locacao`
+|`Boolean`
+|Locação
+
+|`[].integracaoEscrituracao.servicosContabeis`
+|`Boolean`
+|Serviços Contábeis
+
+|`[].retencoesIss`
+|`Array`
+|Lista de Retenções ISS do serviço
+
+|`[].retencoesIss[].id`
+|`Number`
+|Id da Retenções ISS
+
+|`[].retencoesIss[].aliquotaRetencao`
+|`Number`
+|Aliquota da Retenções ISS
+
+|`[].retencoesIss[].uf`
+|`String`
+|UF da Retenções ISS
+
+|`[].retencoesIss[].reducao`
+|`Number`
+|Valor redução
+
+|`[].retencoesIss[].municipio`
+|`Object`
+|Municipio da Retenções ISS
+
+|`[].retencoesIss[].municipio.id`
+|`Number`
+|Id do municipio
+
+|`[].retencoesIss[].municipio.amazoniaOcidental`
+|`Boolean`
+|Indicador de Amazonia Ocidental
+
+|`[].retencoesIss[].municipio.areaLivreComercio`
+|`Boolean`
+|Indicador de area Livre Comercio do municipio
+
+|`[].retencoesIss[].municipio.codigoFederal`
+|`Number`
+|Código Federal
+
+|`[].retencoesIss[].municipio.codigoMunicipal`
+|`Number`
+|Código Municipal
+
+|`[].retencoesIss[].municipio.codigoIBGE`
+|`Number`
+|Código IGBE
+
+|`[].retencoesIss[].municipio.descricao`
+|`String`
+|Descrição do município
+
+|`[].retencoesIss[].municipio.uf`
+|`String`
+|UF do município
+
+|`[].retencoesIss[].municipio.zonaFrancaManaus`
+|`Boolean`
+|Indicador de zona Franca Manaus
+
+|`[].retencoesIss[].servico`
+|`Object`
+|Refrerencia ao Parent
+
+|`[].itensServico`
+|`Array`
+|Lista de Itens do serviço
+
+|`[].itensServico[].id`
+|`Number`
+|Id do Item do serviço
+
+|`[].itensServico[].codigo`
+|`Number`
+|Código do Item do serviço
+
+|`[].itensServico[].descricao`
+|`String`
+|Descrição do Item do serviço
+
+|`[].itensServico[].valorUnitario`
+|`Number`
+|Valor unitário do Item do serviço
+
+|`[].itensServico[].servico`
+|`Object`
+|Referencia ao Parent
+
+|`[].empresa`
+|`Object`
+|Detalhes da Empresa
+
+|`[].recibo`
+|`Boolean`
+|Indicador do recibo do serviço
+
+|===

@@ -1,0 +1,7 @@
+[source,http,options="nowrap"]
+----
+GET /servico/1 HTTP/1.1
+Authorization: Bearer <YOUR-TOKEN-HERE>
+Host: apicontmatic.com.br:8080
+
+----

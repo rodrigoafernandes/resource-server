@@ -1,0 +1,4 @@
+[source,bash]
+----
+$ curl 'http://apicontmatic.com.br:8080/servico/1' -i -X DELETE
+----

@@ -1,0 +1,9 @@
+[source,http,options="nowrap"]
+----
+POST /servico/findByCodigoAndEmpresa HTTP/1.1
+Authorization: Bearer <YOUR-TOKEN-HERE>
+Host: apicontmatic.com.br:8080
+Content-Type: application/x-www-form-urlencoded
+
+codigoServico=123&idEmpresa=1
+----

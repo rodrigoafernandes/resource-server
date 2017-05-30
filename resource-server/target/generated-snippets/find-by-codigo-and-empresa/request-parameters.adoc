@@ -1,0 +1,10 @@
+|===
+|Parameter|Description
+
+|`codigoServico`
+|Código do Serviço
+
+|`idEmpresa`
+|Id da empresa
+
+|===

@@ -1,0 +1,6 @@
+[source,bash]
+----
+$ curl 'http://apicontmatic.com.br:8080/servico/findByCodigoAndEmpresa' -i -X POST \
+    -H 'Authorization: Bearer <YOUR-TOKEN-HERE>' \
+    -d 'codigoServico=123&idEmpresa=1'
+----

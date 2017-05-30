@@ -1,0 +1,25 @@
+|===
+|Path|Type|Description
+
+|`access_token`
+|`String`
+|Token de acesso
+
+|`token_type`
+|`String`
+|Tipo do Token de acesso
+
+|`refresh_token`
+|`String`
+|Token para atualizar a autorização
+
+|`expires_in`
+|`Number`
+|Quantidade em segundos para expirar o token
+
+|`scope`
+|`String`
+|Escopo de acesso da autorização
+
+
+|===

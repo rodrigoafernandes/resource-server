@@ -1,0 +1,4 @@
+[source,bash]
+----
+$ http DELETE 'http://apicontmatic.com.br:8080/servico/1'
+----

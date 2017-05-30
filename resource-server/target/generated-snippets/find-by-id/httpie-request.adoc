@@ -1,0 +1,5 @@
+[source,bash]
+----
+$ http GET 'http://apicontmatic.com.br:8080/servico/1' \
+    'Authorization:Bearer <YOUR-TOKEN-HERE>'
+----

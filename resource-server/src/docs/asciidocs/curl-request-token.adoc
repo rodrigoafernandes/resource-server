@@ -1,0 +1,6 @@
+[source,bash]
+----
+$ curl -u clientIdPassword:secret -X POST -G 'http://lo
+calhost:9999/authorization/oauth/token?username=user&password=password&grant_t
+ype=password'
+----
